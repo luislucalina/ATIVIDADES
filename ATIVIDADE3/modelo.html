@@ -4,27 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width", initial-sclae="1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
-    <title>Atividade 2</title>
-    <link rel="stylesheet" href="/ATIVIDADE2/stilo.css">
-    <script src="/ATIVIDADE2/script.js"></script>
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="/ATIVIDADE3/stilo.css">
+    <script src="/ATIVIDADE3/script.js"></script>
 
 </head>    
 
-<body onload="carregar()">
     <header>
-        <h1>Atividade 2</h1>
+        <h1>Verificador de Idade</h1>
     </header>
 
     <section>
-        <div id="saudacao"></div>
-        <div id="msg">
-         Aqui vai a mensagem.
-        </div>
 
-        <div id="foto">
-            <img id="imagem" src="/ATIVIDADE2/imgs/" alt="">
+       <div>
+        <p> Ano de Nascimento:
+        <input type="number" name="txtano" id="txtano" min="0" >
+        </p>
+
+        <p> Sexo:
+            <input type="radio" name="radsex" id="masc" value="Masculino" checked> Masculino
+            <input type="radio" name="radsex" id="fem" value="Feminino"> Feminino
+        </p>
+
+<p> 
+    <input type="button" value="Verificar Idade" onclick="verificar()">
+    </p>
+
+    </div> 
+
+    <div id="msg">
+         Preencha os dados acima para ver o resultado!
         </div>
-    </section>
+       
+           </section>
 
     <footer>
         <p>&copy; Luis Da Silva</p>
